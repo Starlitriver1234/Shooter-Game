@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://d0luuxthjmkuy" path="res://alien-attack-assets/alien_attack_assets/textures/bg.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://d3kk37cic0lfv" path="res://scenes/player.tscn" id="2_lnu2h"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Game" type="Node2D"]
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1280.0
@@ -11,4 +11,8 @@ offset_bottom = 721.0
 texture = ExtResource("1_yqjtg")
 stretch_mode = 1
 
-[node name="Node2D" parent="Background" instance=ExtResource("2_lnu2h")]
+[node name="Player" parent="." instance=ExtResource("2_lnu2h")]
+position = Vector2(71, 343)
+
+[node name="Player2" parent="." instance=ExtResource("2_lnu2h")]
+position = Vector2(107, 140)
