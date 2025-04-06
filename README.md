@@ -48,8 +48,7 @@ Github: Starlitriver1234
 
 
 # References
-* Item 1
-* Item 2
+
 
 # What I am most proud of in the assignment
 
