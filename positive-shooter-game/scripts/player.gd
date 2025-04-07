@@ -3,9 +3,7 @@ extends CharacterBody2D
 var speed = 300
 
 func _physics_process(delta):
-	if !Input.is_anything_pressed():
-		velocity = Vector2(0,0)
-	
+	velocity = Vector2(0,0)
 	if Input.is_action_pressed("move_right"):
 		velocity.x = speed
 	if Input.is_action_pressed("move_left"):
