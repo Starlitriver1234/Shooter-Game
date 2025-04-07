@@ -1,10 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://xoh0qax0qa2n"]
+[gd_scene load_steps=6 format=3 uid="uid://xoh0qax0qa2n"]
 
+[ext_resource type="Script" uid="uid://bcjc8a4kn6yi" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://d0luuxthjmkuy" path="res://alien-attack-assets/alien_attack_assets/textures/bg.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://d3kk37cic0lfv" path="res://scenes/player.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://o3kv5i7myrix" path="res://scenes/enemy_spawner.tscn" id="3_lnu2h"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnu2h"]
+size = Vector2(20, 53.0618)
+
 [node name="Game" type="Node2D"]
+script = ExtResource("1_lbhrr")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1280.0
@@ -16,3 +21,15 @@ stretch_mode = 1
 position = Vector2(83, 392)
 
 [node name="EnemySpawner" parent="." instance=ExtResource("3_lnu2h")]
+
+[node name="Deathzone" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deathzone"]
+position = Vector2(-135, 369.087)
+rotation = 3.14159
+scale = Vector2(-1.82909, -26.6054)
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[connection signal="area_entered" from="Deathzone" to="." method="_on_deathzone_area_entered"]

@@ -61,3 +61,4 @@ shoot={
 2d_render/layer_1="player"
 2d_render/layer_2="enemy"
 2d_render/layer_3="rocket"
+2d_render/layer_4="deathzone"
