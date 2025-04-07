@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://o7oshnin1qhx"]
 
-[ext_resource type="Script" uid="uid://cn7d25y1nldn6" path="res://rocket.gd" id="1_5gt1y"]
+[ext_resource type="Script" uid="uid://cn7d25y1nldn6" path="res://scripts/rocket.gd" id="1_5gt1y"]
 [ext_resource type="Texture2D" uid="uid://c3en1olbh5kcr" path="res://alien-attack-assets/alien_attack_assets/textures/rocket.png" id="1_fj03e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5gt1y"]
