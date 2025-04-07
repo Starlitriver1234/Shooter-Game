@@ -22,6 +22,18 @@ position = Vector2(2, 475)
 [node name="SpawnPos_05" type="Marker2D" parent="SpawnPositions"]
 position = Vector2(2, 303)
 
+[node name="SpawnPos_06" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(2, 391)
+
+[node name="SpawnPos_07" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(2, 210)
+
+[node name="SpawnPos_08" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(2, 548)
+
+[node name="SpawnPos_09" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(2, 65)
+
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
