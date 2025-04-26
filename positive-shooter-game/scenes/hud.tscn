@@ -1,9 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://dobwtfppcb86r"]
+[gd_scene load_steps=6 format=3 uid="uid://dobwtfppcb86r"]
 
 [ext_resource type="Script" uid="uid://bki78c18rq58w" path="res://scripts/hud.gd" id="1_ahhtf"]
+[ext_resource type="Texture2D" uid="uid://deophwwskdlad" path="res://alien-attack-assets/alien_attack_assets/textures/orb.png" id="2_oo0fn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_toqtt"]
 font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ysmq"]
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_6fi6k"]
+font_size = 60
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -22,3 +29,29 @@ offset_right = 290.0
 offset_bottom = 113.0
 text = "Score: 0"
 label_settings = SubResource("LabelSettings_toqtt")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 101.0
+offset_right = 133.0
+offset_bottom = 219.0
+texture = ExtResource("2_oo0fn")
+
+[node name="X" type="Label" parent="."]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 134.0
+offset_right = 183.0
+offset_bottom = 189.0
+text = "X"
+label_settings = SubResource("LabelSettings_5ysmq")
+
+[node name="LivesLeft" type="Label" parent="."]
+layout_mode = 0
+offset_left = 201.0
+offset_top = 116.0
+offset_right = 241.0
+offset_bottom = 199.0
+text = "4"
+label_settings = SubResource("LabelSettings_6fi6k")
