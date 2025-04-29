@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ct8e4u23bjequ"
+path="res://.godot/imported/Ghost Saved.mp3-dcade9ba8ba03e407eda04bf8adeac5e.mp3str"
+
+[deps]
+
+source_file="res://New Assets/Ghost Saved.mp3"
+dest_files=["res://.godot/imported/Ghost Saved.mp3-dcade9ba8ba03e407eda04bf8adeac5e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

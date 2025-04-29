@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wp3psy6sokv6"
+path="res://.godot/imported/Magic.mp3-b470817a1b4d6c6339f06f6310e52d54.mp3str"
+
+[deps]
+
+source_file="res://New Assets/Magic.mp3"
+dest_files=["res://.godot/imported/Magic.mp3-b470817a1b4d6c6339f06f6310e52d54.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
