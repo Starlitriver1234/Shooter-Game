@@ -13,7 +13,6 @@ config_version=5
 config/name="Positive Shooter Game"
 run/main_scene="uid://xoh0qax0qa2n"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 

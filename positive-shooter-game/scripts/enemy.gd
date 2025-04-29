@@ -14,7 +14,7 @@ func _ready() -> void:
 	for child in get_children():
 		if child is Sprite2D:
 			_sprite = child
-			break
+
 
 func _physics_process(delta):
 	global_position.x += -speed * delta
