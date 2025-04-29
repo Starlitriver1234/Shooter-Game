@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3kk37cic0lfv"]
+[gd_scene load_steps=7 format=3 uid="uid://d3kk37cic0lfv"]
 
 [ext_resource type="Script" uid="uid://05idpdiq274o" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://cwxr8bhahldx2" path="res://New Assets/Ghost King.png" id="2_g2els"]
@@ -6,6 +6,18 @@
 [ext_resource type="AudioStream" uid="uid://cassn86uxbohp" path="res://New Assets/Ghost Game Music.mp3" id="4_dqkch"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dqkch"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(2, 15, 1)
+initial_velocity_min = 19.15
+initial_velocity_max = 88.12
+gravity = Vector3(0, 0, 0)
+scale_max = 3.0
+color = Color(0.87451, 0.623529, 0, 1)
+hue_variation_min = -2.23517e-08
+hue_variation_max = 0.2
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 2
@@ -34,3 +46,10 @@ stream = ExtResource("4_dqkch")
 volume_db = -26.708
 autoplay = true
 parameters/looping = true
+
+[node name="Flame" type="GPUParticles2D" parent="."]
+position = Vector2(-29, 8)
+rotation = 3.0851
+amount = 80
+lifetime = 1.56
+process_material = SubResource("ParticleProcessMaterial_dqkch")
