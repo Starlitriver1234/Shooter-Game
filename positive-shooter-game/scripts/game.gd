@@ -6,6 +6,7 @@ var score = 0
 @onready var hud = $UI/HUD
 @onready var ui = $UI
 @onready var enemy_hit_sound = $EnemyHitSound
+@onready var player_hit_sound = $PlayerHitSound
 
 var gameoverscene = preload("res://scenes/game_over_screen.tscn")
 
@@ -18,6 +19,7 @@ func _on_deathzone_area_entered(area: Area2D) -> void:
 
 
 func _on_player_took_damage() -> void:
+	player_hit_sound.play()
 	lives = lives - 1
 	hud.set_lives(lives)
 	if(lives == 0):
