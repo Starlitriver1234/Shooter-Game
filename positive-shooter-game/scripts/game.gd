@@ -4,6 +4,9 @@ var lives = 4
 var score = 0
 @onready var player = $Player
 @onready var hud = $UI/HUD
+@onready var ui = $UI
+
+var gameoverscene = preload("res://scenes/game_over_screen.tscn")
 
 func _ready():
 	hud.set_score_label(score)
@@ -18,6 +21,11 @@ func _on_player_took_damage() -> void:
 	hud.set_lives(lives)
 	if(lives == 0):
 		player.end()
+		score = score + 100
+		await get_tree().create_timer(0.7).timeout
+		var gos = gameoverscene.instantiate()
+		gos.set_score(score)
+		ui.add_child(gos)
 	
 
 
