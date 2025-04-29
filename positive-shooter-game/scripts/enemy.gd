@@ -7,7 +7,7 @@ signal was_saved
 
 var new_ghost: Texture2D
 var _sprite: Sprite2D
-
+var ghost_saved: bool = false
 
 func _ready() -> void:
 	new_ghost = load("res://New Assets/Happy Ghost.png")
@@ -21,6 +21,9 @@ func _physics_process(delta):
 
 
 func saved():
+	if ghost_saved:
+		return
+	ghost_saved = true
 	if _sprite and new_ghost:
 		_sprite.texture = new_ghost
 		emit_signal("was_saved")
@@ -38,5 +41,6 @@ func delayed():
 	
 
 func _on_body_entered(body: Node2D) -> void:
-	body.take_damage()
-	saved()
+	if not ghost_saved and "take_damage" in body:
+		body.take_damage()
+		saved()
