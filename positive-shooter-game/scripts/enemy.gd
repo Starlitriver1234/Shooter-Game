@@ -23,14 +23,17 @@ func _physics_process(delta):
 func saved():
 	if _sprite and new_ghost:
 		_sprite.texture = new_ghost
+		emit_signal("was_saved")
 		call_deferred("delayed")
 	else:
 		queue_free()
 
+func failed_to_save():
+	queue_free()
+
 
 func delayed():
 	await get_tree().create_timer(duration).timeout
-	emit_signal("was_saved")
 	queue_free()
 	
 

@@ -10,7 +10,7 @@ func _ready():
 	hud.set_lives(lives)
 
 func _on_deathzone_area_entered(area: Area2D) -> void:
-	area.saved()
+	area.failed_to_save()
 
 
 func _on_player_took_damage() -> void:
