@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://xoh0qax0qa2n"]
 
 [ext_resource type="Script" uid="uid://bcjc8a4kn6yi" path="res://scripts/game.gd" id="1_lbhrr"]
-[ext_resource type="Texture2D" uid="uid://d0luuxthjmkuy" path="res://alien-attack-assets/alien_attack_assets/textures/bg.png" id="1_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://bl6ulm7bmho1" path="res://New Assets/Stars.png" id="2_iywne"]
 [ext_resource type="PackedScene" uid="uid://d3kk37cic0lfv" path="res://scenes/player.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://o3kv5i7myrix" path="res://scenes/enemy_spawner.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dobwtfppcb86r" path="res://scenes/hud.tscn" id="5_iywne"]
@@ -13,13 +13,24 @@ size = Vector2(20, 53.0618)
 script = ExtResource("1_lbhrr")
 
 [node name="Background" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 721.0
-texture = ExtResource("1_yqjtg")
+offset_right = 1348.0
+offset_bottom = 774.0
+scale = Vector2(0.428568, 0.353742)
+texture = ExtResource("2_iywne")
+stretch_mode = 1
+
+[node name="Background2" type="TextureRect" parent="."]
+offset_left = 863.0
+offset_top = -65.0
+offset_right = 2911.0
+offset_bottom = 1983.0
+scale = Vector2(0.526609, 0.386715)
+texture = ExtResource("2_iywne")
 stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("2_lnu2h")]
 position = Vector2(83, 392)
+scale = Vector2(1.00922, 1.00992)
 
 [node name="EnemySpawner" parent="." instance=ExtResource("3_lnu2h")]
 

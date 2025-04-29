@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cassn86uxbohp"
+path="res://.godot/imported/Ghost Game Music.mp3-0195469e0b4b73cdbb2d01478a1a4954.mp3str"
+
+[deps]
+
+source_file="res://New Assets/Ghost Game Music.mp3"
+dest_files=["res://.godot/imported/Ghost Game Music.mp3-0195469e0b4b73cdbb2d01478a1a4954.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
