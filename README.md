@@ -57,7 +57,6 @@ Save the Ghosts! uses a few scenes and then instantiates them into the main game
 | Hit.mp3 | Self made in Garageband |
 | Magic.mp3 | Self made in Garageband |
 | Game Over.mp3 | Self made in Garageband |
-
 | enemy.gd | Self written |
 | enemy_spawner.gd | Self written |
 | game.gd | Self written |
