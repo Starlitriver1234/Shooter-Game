@@ -8,8 +8,7 @@ Student Number: C24745999
 Github: Starlitriver1234
 
 # Video
-
-
+https://youtu.be/TqYlPK_GnIc?si=PXau4XaCnyeQB6Ka
 
 
 
