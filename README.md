@@ -15,7 +15,7 @@ https://youtu.be/TqYlPK_GnIc?si=PXau4XaCnyeQB6Ka
 
 # Screenshots
 ![image](https://github.com/user-attachments/assets/6bad8b3e-3dda-48d6-873f-071979be7277)
-![image](https://github.com/user-attachments/assets/3f1724a4-d32e-41ac-8001-8d287bc097da)
+![image](https://github.com/user-attachments/assets/e0c1cdb1-804d-484f-85a1-74d3d190f5f1)
 ![image](https://github.com/user-attachments/assets/66191802-32db-4f8a-b97d-324c6719edfd)
 ![image](https://github.com/user-attachments/assets/e5a2a777-701e-46b4-8131-25624ea48939)
 ![image](https://github.com/user-attachments/assets/1a204d53-5566-4741-8ab7-79072c37b79b)
