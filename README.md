@@ -11,6 +11,8 @@ Github: Starlitriver1234
 https://youtu.be/bYyWIoEEhXY
 
 
+# Itch link
+https://tudor-marinescu.itch.io/save-the-ghosts
 
 
 # Screenshots
