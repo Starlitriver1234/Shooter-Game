@@ -8,7 +8,7 @@ Student Number: C24745999
 Github: Starlitriver1234
 
 # Video
-https://www.youtube.com/watch?v=H7886nVzdKI
+https://youtu.be/bYyWIoEEhXY
 
 
 
@@ -22,6 +22,11 @@ https://www.youtube.com/watch?v=H7886nVzdKI
 ![image](https://github.com/user-attachments/assets/fd649c03-d2f5-440d-9f39-fc3cd42f3edc)
 ![image](https://github.com/user-attachments/assets/ecd0d57a-ee54-4178-9374-e2d7d132c6fe)
 ![image](https://github.com/user-attachments/assets/b1486cf0-bcb8-443e-a97f-f8e3f02e22ac)
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/3f20b9db-1607-402a-9a23-e8ff8ffbde19" />
+![image](https://github.com/user-attachments/assets/3c7d46b3-aff1-4d9b-acfc-0d1758317762)
+
+
+
 
 
 
@@ -37,7 +42,7 @@ You can move in every direction and have a total 4 lives. Use them wisely in ord
 
 
 # How it works:
-Save the Ghosts! uses a few scenes and then instantiates them into the main game scene. Ghosts use spawners that are off screen in order to appear. Each spawner activates randomly and then the ghosts travers the entire screen, dissapearing automatically when they are once more off screen. The player uses magial orbs in order to save the ghosts, which are instantiated into the scene every time they press the space bar or shift.The moment the orb gets off screen or touches a ghost, it dissapears. When touched by one of these orbs, a ghost will change its sprite to a happy one before vanishing. For this, I created a signal with a timer and queue_free(). Your score will also go up by 100, this is done using a function called _on_enemy_saved. This function also plays a sound for the enemy being saved and updates the score in the UI. If the player gets hit by a ghost, the signal took_damage is triggered, the ghost is still saved, but you lose a life. Another function takes care of this, making sure the change appears in the UI as well. An if statment checks if your lives are 0 and when they are, the game over screen is instantiated into the game. The song also changes to a sadder and calmer one. Your final score will be displayed and also a button to retry the game, which reloads the main game scene. There is also an exit button if you wish to close the game.
+Save the Ghosts! uses a few scenes and then instantiates them into the main game scene. Ghosts use spawners that are off screen in order to appear. Each spawner activates randomly and then the ghosts travers the entire screen, dissapearing automatically when they are once more off screen. The player uses magial orbs in order to save the ghosts, which are instantiated into the scene every time they press the space bar or shift.The moment the orb gets off screen or touches a ghost, it dissapears. When touched by one of these orbs, a ghost will change its sprite to a happy one before vanishing. For this, I created a signal with a timer and queue_free(). There is also a second type of ghost that is a pathed enemy. It uses another scene in which I drew a path for the enemy and then instanciates an enemy into that scene. The enemy works the same as the others but it now moves differently. Your score will also go up by 100, this is done using a function called _on_enemy_saved. This function also plays a sound for the enemy being saved and updates the score in the UI. If the player gets hit by a ghost, the signal took_damage is triggered, the ghost is still saved, but you lose a life. Another function takes care of this, making sure the change appears in the UI as well. An if statment checks if your lives are 0 and when they are, the game over screen is instantiated into the game. The song also changes to a sadder and calmer one. Your final score will be displayed and also a button to retry the game, which reloads the main game scene. There is also an exit button if you wish to close the game.
 
 
 # List of classes/assets in the project
